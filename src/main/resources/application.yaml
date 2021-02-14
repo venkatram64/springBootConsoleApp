@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/my_eapp
+    username: root
+    password: root
+
+#logging.level.root: INFO
+#logging.level.com.venkat: TRACE
+
