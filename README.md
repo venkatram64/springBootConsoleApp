@@ -12,3 +12,17 @@ CREATE TABLE `my_eapp`.`products` (
 `model_year` INT NULL,
 `list_price` DECIMAL(10,2) NULL,
 PRIMARY KEY (`product_id`));
+
+
+CREATE TABLE `my_eapp`.`customers` (
+`customer_id` INT NOT NULL AUTO_INCREMENT,
+`first_name` VARCHAR(50) NULL,
+`last_name` VARCHAR(50) NULL,
+`phone` VARCHAR(12) NULL,
+`email` VARCHAR(45) NULL,
+`street` VARCHAR(45) NULL,
+`city` VARCHAR(45) NULL,
+`state` VARCHAR(45) NULL,
+`zip_code` VARCHAR(45) NULL,
+PRIMARY KEY (`customer_id`),
+UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE);
